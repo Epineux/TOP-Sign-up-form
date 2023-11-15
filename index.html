@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sign-up form</title>
+    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/Rocket Logo.svg">
+    <script src="javascript.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image">
+        <div class="title">SpaceCraft</div>
+        <div class="logo">
+          <img src="images/Rocket Logo.svg" alt="Rocket" class="rocket">
+        </div>
+      </div>
+      <div class="main">
+        <div class="text">
+          <p class="mainText">
+            Embark on an interstellar adventure with SpaceCraft, your online shop for premium spaceship components.
+          </p>
+        </div>
+        <div class="sign-up">
+          <h1>
+            Take off
+          </h1>
+          <form>
+            <div class="inputs">
+              <div class="field">
+                <label for="firstName">FIRST NAME</label>
+                <input type="text" 
+                id="firstName" 
+                name="firstName" 
+                placeholder="Paul" required>
+                <div class="error"></div>
+              </div>
+              <div class="field">
+                <label for="lastName">LAST NAME</label>
+                <input type="text" 
+                id="lastName" 
+                name="lastName" 
+                placeholder="Atreides" required>
+                <div class="error"></div>
+              </div>
+              <div class="field">
+                <label for="email">EMAIL</label>
+                <input type="email" 
+                id="email" 
+                name="email"
+                class="email"
+                placeholder="example@mail.com" required>
+                <div class="error email-message"></div>
+              </div>
+              <div class="field">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" 
+                id="phone" 
+                name="phone" 
+                class="tel"
+                placeholder="+XXXXXXXXXXX" 
+                pattern="[0-9+]{3,}" required>
+                <div class="error tel-message"></div>
+              </div>
+              <div class="field">
+                <label for="password">PASSWORD</label>
+                <input type="password"
+                id="password" 
+                name="password" 
+                class="password" 
+                placeholder="Strong password"
+                minlength="8" required>
+                <div class="error password-message"></div>
+              </div>
+              <div class="field">
+                <label for="passwordConfirmation">CONFIRM PASSWORD</label>
+                <input type="password" 
+                id="passwordConfirmation" 
+                class="password-confirmation" 
+                placeholder="Do not copy paste !" required>
+                <div class="error confirmation-message"></div>
+              </div>
+              <div class="form-confirmation">
+                <button disabled>Create Account</button>
+                <p>
+                  Already have an account ? <a href="#">Log in</a>
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

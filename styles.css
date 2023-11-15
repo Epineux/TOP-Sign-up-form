@@ -1,0 +1,182 @@
+:root {
+  --moon-color: #BBD9D9;
+  --space-color: #033745;
+  --ground-color: #e46769;
+}
+
+body {
+  background-color: #0E1C29;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.image {
+  width: 34%;
+  height: 100dvh;
+  background-image: url('images/moon.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--moon-color);
+}
+
+.title {
+  margin-right: 5px;
+  margin-top: 80px;
+  font-size: 2em;
+  font-family: 'Space Mono', monospace;
+}
+
+.rocket {
+  width: 40px;
+  color: var(--moon-color);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-top: 67px;
+}
+
+.main {
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--space-color);
+  background: linear-gradient(to top, var(--ground-color), var(--moon-color), var(--space-color)); 
+  background-position: 0 100%;
+  background-size: 100% 200%;
+  transition: background-position 2s ease, color 2s ease;
+}
+
+.main:hover {
+  background-position: 0 0;
+  color: var(--moon-color);
+}
+
+.text { 
+  padding: 3rem;
+}
+
+.mainText {
+  font-size: 1.4rem;
+  width: 45ch;
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin-left: 3rem;
+}
+
+.sign-up {
+  padding-top: 2rem;
+  box-shadow: 0px 0px rgba(2, 53, 66, 1);
+  font-weight: bold;
+}
+
+.inputs {
+  padding: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 1rem;
+  font-size: 0.7rem;
+}
+
+label {
+  margin-bottom: 0.3rem;
+}
+
+input {
+  outline: none;
+  padding: 5px;
+  padding-left: 1rem;
+  border: 2px solid var(--ground-color);
+  border-radius: 10px;
+  transition: all 1s ease;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+input:placeholder-shown {
+  border: 2px solid var(--moon-color);
+}
+
+input:focus {
+  border: 2px solid var(--space-color);
+  border-radius: 15px;
+  box-shadow:  6px 6px 4px rgba(2, 53, 66, 0.2);
+}
+
+input::placeholder{
+  color: var(--moon-color);
+}
+
+.form-confirmation {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  padding: 1rem 2rem;
+  width: 200px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(to top, var(--ground-color), var(--moon-color), var(--space-color));
+  background-position: 0 100%;
+  background-size: 100% 220%;
+  color: var(--space-color);
+  font-weight: bold;
+  transition: background-position 2s ease, color 2s ease;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:focus {
+  cursor: pointer;
+  background-position: 0 0;
+  color: var(--moon-color)
+}
+
+.error {
+  color: rgb(255, 124, 124);
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.form-confirmation p {
+  color: var(--space-color);
+  align-self: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+
+a {
+  color: blue;
+}
