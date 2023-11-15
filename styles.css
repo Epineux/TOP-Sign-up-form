@@ -46,6 +46,23 @@ body {
   margin-top: 67px;
 }
 
+.credit {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.6rem;
+}
+
+.credit a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.credit a:hover {
+  color: blue;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .main {
   width: 66%;
   display: flex;
